@@ -1,0 +1,77 @@
+@import './comman/Veriables.module.scss';
+$backgroundImage: url('../assets/img/Shape V4.png');
+// $barchart: url("../assets/img/bar-chart-square-w02.svg");
+
+@mixin drawerMixin{
+    top: .5%;
+    margin-left: 1%;
+    transition-duration: .2s;
+    height: 100%;
+    background-color: #fff;
+    background-image:$backgroundImage;
+    background-size: cover;
+    background-position: center;
+    border-right:1px solid #E0E0E0;
+    position: fixed;
+    z-index: -1;
+    padding:1%;
+    overflow: hidden;
+    // border-radius: 30px;
+    padding-bottom: 10%;
+    // overflow: auto;
+    display: grid;
+    grid-gap: 9%;
+    // place-items: center;
+        // border: 1px solid rgb(0, 166, 255);
+        // margin-top: 2%;
+
+
+    .header {
+        width: 100%;
+        height: 10%;
+        // background-color: #fff;
+        border-top-left-radius: 25px;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        & img {
+            width: auto;
+        }
+        margin-left: 5%;   
+            // border: 1px solid red;
+
+    }
+
+    .actvie_link {
+        text-decoration: none!important;
+        background-color: #0C6A96;
+        border-radius: 10px;
+        color: #fff !important;
+       
+    }
+    .non_actvie_link {
+        background-color: #0C6A96;
+        border-radius: 20px;
+        // color: red !important;
+    }
+}
+
+.drawer_open{
+    width: 20%;
+    // border: 1px solid green;
+
+    @include drawerMixin
+}
+
+.drawer_close{
+    width: 7%;
+    @include drawerMixin
+}
+
+.whiteColor{
+    color:#fff!important;
+}
+
+.activeColor{
+    color: #344054,!important;
+}

@@ -1,0 +1,28 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../public/assets/img/login_img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+        .login_card{
+            width: 40%;
+            .brand {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        } 
+
+
+        .login_form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+}

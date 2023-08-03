@@ -1,0 +1,30 @@
+@import './comman/Veriables.module.scss';
+
+@mixin appbarMixin{
+    position: fixed;
+    top: 1%;
+    height: 10%;
+    background-color: #fff;
+    background-image: url();
+    z-index: 1;
+    transition-duration: .2s;
+    color:#1D2524;
+    // border:1px solid red ;
+    height:7.188rem;
+    // border-radius: 30px;
+}
+
+.appbar_open{
+    width: 77%;
+    left: 22%;
+    align-content: center;
+    @include appbarMixin
+}
+
+.appbar_close{
+    width: 93%;
+
+    left: 8%;
+
+    @include appbarMixin
+}

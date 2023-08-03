@@ -1,0 +1,22 @@
+@mixin body {
+    transition-duration: .2s;
+    position: absolute;
+    top: 15%;
+    padding: 20px;
+    // border-left:1px solid #1d842b;
+    height:100vh;
+}
+
+.body_open {
+    @include body;
+    left: 22%;
+    width: 77%;
+}
+
+.body_close {
+    @include body;
+    left: 6%;
+    width: 93%;
+    // margin-right: 2%;
+    padding-left: 3%;
+}
